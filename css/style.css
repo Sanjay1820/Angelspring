@@ -733,11 +733,14 @@ section {
 }
 
 /* Secondary Pages Hero */
+/* Secondary Pages Hero */
 .secondary-hero {
     margin-top: 0;
-    /* No longer needed as header is fixed top 36px */
-    height: 45vh !important;
-    min-height: 350px;
+    padding-top: 80px;
+    /* Push content down to clear header */
+    height: 50vh !important;
+    /* Slightly increased height for better balance */
+    min-height: 400px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
