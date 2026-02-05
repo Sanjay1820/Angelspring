@@ -1,0 +1,12 @@
+{
+  "name": "angel-spring",
+  "version": "1.0.0",
+  "description": "Angel Spring Precision Engineering",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx browser-sync start --server --files '*.html, css/*.css, js/*.js' --no-notify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
