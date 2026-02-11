@@ -1,0 +1,314 @@
+/* Product Detail Page - Hero Banner Responsive Styles */
+
+.hero.secondary-hero {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 160px 5% 60px; /* Significance top padding needed to clear fixed header fully */
+    margin-top: 0;
+    text-align: center; /* Enforce text centering */
+}
+
+/* Ensure glass box content is centered */
+.hero-glass-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero-glass-box {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.detail-category {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.hero-glass-box h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin: 20px 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-glass-box p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.hero-line {
+    width: 100px;
+    height: 3px;
+    background: var(--white);
+    margin: 30px auto;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Hero Banner */
+@media (max-width: 1200px) {
+    .hero.secondary-hero {
+        min-height: 50vh;
+        padding: 120px 5% 60px; /* Adjusted for smaller screens */
+    }
+    
+    .hero-glass-box {
+        padding: 50px 30px;
+    }
+    
+    .hero-glass-box h1 {
+        font-size: 2.8rem;
+    }
+    
+    .detail-container {
+        margin-top: 60px; /* Spacing after hero */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero.secondary-hero {
+        min-height: 100vh; /* User preference: Full screen */
+        min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+        padding: 120px 5% 60px; /* Top padding balances fixed header (80px) + visual center */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-glass-box {
+        padding: 40px 25px;
+        margin-top: 20px; /* Slight offset for visual balance */
+    }
+    
+    .hero-glass-box h1 {
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+        line-height: 1.3;
+        margin: 18px 0;
+    }
+    
+    .hero-glass-box p {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin: 18px 0;
+    }
+    
+    .detail-category {
+        font-size: 0.72rem;
+        padding: 7px 16px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+    
+    .hero-line {
+        width: 80px;
+        margin: 22px auto;
+    }
+    
+    .detail-container {
+        margin-top: 0; /* Reset since hero is full screen */
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero.secondary-hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 110px 5% 50px;
+    }
+    
+    .hero-glass-box {
+        padding: 30px 20px;
+        width: 100%;
+    }
+    
+    .hero-glass-box h1 {
+        font-size: 1.9rem;
+        letter-spacing: 0.5px;
+        line-height: 1.4;
+        margin: 15px 0;
+    }
+    
+    .hero-glass-box p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin: 15px 0;
+    }
+    
+    .hero-line {
+        width: 60px;
+        height: 2px;
+        margin: 18px auto;
+    }
+    
+    .cta-group {
+        margin-top: 20px !important;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.8rem;
+    }
+    
+    .detail-category {
+        font-size: 0.65rem;
+        padding: 6px 12px;
+        letter-spacing: 1.2px;
+    }
+    
+    .detail-container {
+        padding-top: 40px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    .hero.secondary-hero {
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 100px 3% 40px;
+    }
+    
+    .hero-glass-box {
+        padding: 25px 15px;
+    }
+    
+    .hero-glass-box h1 {
+        font-size: 1.6rem;
+        margin: 12px 0;
+    }
+    
+    .hero-glass-box p {
+        font-size: 0.9rem;
+        margin: 12px 0;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+    }
+    
+    .detail-container {
+        padding-top: 30px;
+    }
+}
+
+/* Product Detail Main Content Responsive */
+.detail-container {
+    max-width: 1400px;
+    margin: 80px auto 0; /* Top margin for spacing after hero */
+    padding: 80px 5%;
+}
+
+.detail-main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Section Spacing */
+.detail-benchmarks,
+.related-section {
+    margin-top: 100px;
+    padding: 60px 0;
+}
+
+@media (max-width: 1024px) {
+    .detail-main-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .detail-container {
+        padding: 60px 5%;
+        margin-top: 60px;
+    }
+    
+    .detail-benchmarks,
+    .related-section {
+        margin-top: 80px;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .detail-container {
+        padding: 40px 5%;
+        margin-top: 50px;
+    }
+    
+    .detail-benchmarks,
+    .related-section {
+        margin-top: 60px;
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-container {
+        padding: 30px 5%;
+        margin-top: 40px;
+    }
+    
+    .detail-benchmarks,
+    .related-section {
+        margin-top: 50px;
+        padding: 30px 0;
+    }
+}
+.text-center{
+    text-align: center;
+}

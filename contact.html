@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Spring Stainless Steel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="cursor-none">
+
+    <!-- Industrial System Ticker -->
+    <div class="system-ticker">
+        <div class="ticker-wrap">
+            <div class="ticker-item">
+                <div class="status-dot"></div> FACILITY STATUS: <span>OPERATIONAL</span>
+            </div>
+            <div class="ticker-item"><i class="fas fa-microchip"></i> PRECISION INDEX: <span>99.98%</span></div>
+            <div class="ticker-item"><i class="fas fa-thermometer-half"></i> TEMPERING TEMP: <span>450&deg;C</span>
+            </div>
+            <div class="ticker-item"><i class="fas fa-truck-loading"></i> ACTIVE EXPORTS: <span>14 UNITS</span></div>
+            <div class="ticker-item"><i class="fas fa-shield-alt"></i> ISO COMPLIANCE: <span>VERIFIED</span></div>
+            <!-- Duplicated for infinite loop -->
+            <div class="ticker-item">
+                <div class="status-dot"></div> FACILITY STATUS: <span>OPERATIONAL</span>
+            </div>
+            <div class="ticker-item"><i class="fas fa-microchip"></i> PRECISION INDEX: <span>99.98%</span></div>
+            <div class="ticker-item"><i class="fas fa-thermometer-half"></i> TEMPERING TEMP: <span>450&deg;C</span>
+            </div>
+            <div class="ticker-item"><i class="fas fa-truck-loading"></i> ACTIVE EXPORTS: <span>14 UNITS</span></div>
+            <div class="ticker-item"><i class="fas fa-shield-alt"></i> ISO COMPLIANCE: <span>VERIFIED</span></div>
+        </div>
+    </div>
+
+    <!-- Branded Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spring-logo">
+                <div class="loader-pulse"></div>
+                <!-- <i class="fas fa-cube"></i> -->
+                <img src="assets/logo.png" alt="Angel Spring"
+                    style="width: 100%; height: auto; position: relative; z-index: 2;">
+            </div>
+            <div class="loader-text">Angel <span>Spring</span></div>
+        </div>
+    </div>
+
+    <!-- Fixed Social Sidebar -->
+    <div class="fixed-socials animate-up">
+        <div class="social-vertical-line"></div>
+        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        <div class="social-vertical-line bottom"></div>
+    </div>
+
+    <header id="main-header">
+        <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="Angel Spring">
+        </a>
+        <div class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="quality.html">Quality</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="btn btn-primary nav-cta-mobile">Get Quote</a>
+        </nav>
+        <a href="contact.html" class="btn btn-primary nav-cta">Get Quote</a>
+    </header>
+
+    <section class="hero secondary-hero"
+        style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/hero-contact.png');">
+        <div class="hero-content">
+            <h1 class="reveal-text"><span>Global Partnership Network</span></h1>
+            <p class="animate-up">Connect with our engineering team for specialized consultation and metallurgical
+                analysis.</p>
+            <div class="cta-group animate-up" style="margin-top: 2rem;">
+                <a href="products.html" class="btn btn-primary">Our Tech</a>
+                <a href="contact.html" class="btn btn-secondary">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-wrapper">
+        <div class="contact-container animate-up">
+            <div class="contact-form">
+                <div class="modal-badge" style="margin-bottom: 20px;">SYSTEM-TX // 2026</div>
+                <h2 style="font-size: 2.22rem; margin-bottom: 15px; font-weight: 800; letter-spacing: 1px;">Direct
+                    Transmission</h2>
+                <div class="h-line"
+                    style="width: 40px; height: 3px; background: var(--white); margin: 20px 0; opacity: 0.3;"></div>
+                <p style="color: var(--steel-grey); font-size: 0.95rem; margin-bottom: 40px; line-height: 1.6;">Direct
+                    line to our metallurgical engineering team. Average response time: 2.5 hours.</p>
+
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="client_name" placeholder="e.g. Alexander Knight" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" name="client_email" placeholder="alex@company.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" name="company_name" placeholder="Global Industries Ltd.">
+                        </div>
+                        <div class="form-group">
+                            <label>Industry Sector</label>
+                            <select name="industry">
+                                <option value="aerospace">Aerospace & Defense</option>
+                                <option value="medical">Medical Technology</option>
+                                <option value="energy">Energy & Renewables</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="other">Other Industrial</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Reason for Inquiry</label>
+                        <select name="inquiry_type" style="color: var(--white);">
+                            <option value="quote">Request for Quote (RFQ)</option>
+                            <option value="technical">Metallurgical Consultation</option>
+                            <option value="custom">Custom Component Design</option>
+                            <option value="partnership">Global Supply Partnership</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" name="client_phone" placeholder="+1 (555) 000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your Requirements</label>
+                        <textarea name="message" rows="5"
+                            placeholder="Please describe wire diameter, material grade, and estimated batch volume..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="modal-submit-btn">
+                        Send Now <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <div id="contactSuccess" class="contact-success">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Transmission Confirmed</h3>
+                    <p>Your technical inquiry has been received. Our engineering team will review your specifications
+                        and contact you shortly.</p>
+                </div>
+            </div>
+
+            <div class="contact-info-panel">
+                <h3 style="margin-bottom: 20px; font-size: 1.8rem; letter-spacing: 2px;">Global Headquarters</h3>
+                <p style="color: var(--steel-grey); font-size: 1.1rem; margin-bottom: 40px;">Serving 45+ countries with
+                    localized logistics hubs.</p>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4 style="margin-bottom: 8px; font-size: 1.2rem;">Corporate Office</h4>
+                        <p style="color: var(--primary-silver); font-size: 1.05rem; line-height: 1.6;">123 Precision
+                            Way,
+                            Industrial District 4,<br>New York, NY 10001, USA</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4 style="margin-bottom: 8px; font-size: 1.2rem;">Engineering Desk</h4>
+                        <p style="color: var(--primary-silver); font-size: 1.05rem;">+1 (555) 982-PRECISION<br><span
+                                style="color: var(--steel-grey);">Mon-Fri: 08:00 - 18:00 EST</span></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div>
+                        <h4 style="margin-bottom: 8px; font-size: 1.2rem;">Direct Email</h4>
+                        <p style="color: var(--primary-silver); font-size: 1.05rem;">
+                            rfq@angelspring.com<br>tech-support@angelspring.com</p>
+                    </div>
+                </div>
+
+
+                <div style="margin-top: 60px;">
+                    <h4 style="font-size: 1rem; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 2px;">
+                        Secured Network</h4>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" class="btn btn-secondary"
+                            style="padding: 0; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; border-color: rgba(255,255,255,0.1);"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-secondary"
+                            style="padding: 0; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; border-color: rgba(255,255,255,0.1);"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-secondary"
+                            style="padding: 0; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; border-color: rgba(255,255,255,0.1);"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-secondary"
+                            style="padding: 0; width: 45px; height: 45px; border-radius: 12px; display: flex; align-items: center; justify-content: center; border-color: rgba(255,255,255,0.1);"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Quick View -->
+        <div class="sectors-grid" style="margin-top: 100px;">
+            <div class="feature-card animate-up">
+                <h4><i class="fas fa-question-circle" style="color: var(--steel-grey); margin-right: 10px;"></i> Lead
+                    Time Samples?</h4>
+                <p>Prototype samples are typically delivered within 5-7 business days depending on material
+                    availability.</p>
+            </div>
+            <div class="feature-card animate-up">
+                <h4><i class="fas fa-certificate" style="color: var(--steel-grey); margin-right: 10px;"></i>
+                    Certification Provided?</h4>
+                <p>Every batch includes complete metallurgical MTRs, CoCs, and load testing certifications as standard.
+                </p>
+            </div>
+            <div class="feature-card animate-up">
+                <h4><i class="fas fa-shipping-fast" style="color: var(--steel-grey); margin-right: 10px;"></i> Global
+                    Shipping?</h4>
+                <p>We provide DAP/DDP shipping options worldwide via our specialized industrial logistics partners.</p>
+            </div>
+        </div>
+
+        <div class="map-section animate-up">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1422937950147!2d-73.9873196845939!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1645000000000!5m2!1sen!2sus"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-cta-card animate-up">
+            <div>
+                <h2>Ready to Engineer the Future?</h2>
+                <p>Book a technical consultation with our lead metallurgical team.</p>
+            </div>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+
+        <div class="footer-grid animate-up">
+            <div class="footer-col">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="Angel Spring">
+                </a>
+                <p class="footer-desc">
+                    World-class precision engineering in stainless steel. Specialized in high-fatigue spring solutions
+                    for aerospace, medical, and energy sectors.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Core Solutions</h4>
+                <ul>
+                    <li><a href="products.html">Compression Springs</a></li>
+                    <li><a href="products.html">Torsion Systems</a></li>
+                    <li><a href="products.html">Extension Tech</a></li>
+                    <li><a href="products.html">Custom Alloys</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="quality.html">Quality Certs</a></li>
+                    <li><a href="about.html">Heritage</a></li>
+                    <li><a href="#">Technical Data</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="contact.html">Request Quote</a></li>
+                    <li><a href="contact.html">Help Center</a></li>
+                    <li><a href="contact.html">Distributors</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom animate-up">
+            <p>&copy; 2026 Angel Spring Precision Engineering. All Rights Reserved. <span class="footer-sep">|</span>
+                <span class="footer-iso">ISO 9001:2015 CERTIFIED</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fab-container">
+        <a href="#" class="fab-btn back-to-top">
+            <i class="fas fa-chevron-up"></i>
+            <span class="btn-tooltip">Back to Top</span>
+        </a>
+        <a href="https://wa.me/919586526793" class="fab-btn whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="btn-tooltip">Chat with us</span>
+        </a>
+    </div>
+
+    <style>
+        /* Fix for dropdown options visibility in dark mode */
+        select option {
+            background-color: #121212;
+            color: #ffffff;
+        }
+    </style>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = this;
+            const btn = form.querySelector('button[type="submit"]');
+            const originalBtnText = btn.innerHTML;
+            const successMsg = document.getElementById('contactSuccess');
+
+            btn.innerHTML = 'Sending... <i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+
+            const formData = new FormData(form);
+            const clientPhone = formData.get('client_phone') || '';
+            const templateParams = {
+                client_name: formData.get('client_name'),
+                client_email: formData.get('client_email'),
+                client_phone: clientPhone,
+                client_phone_clean: clientPhone.replace(/[^0-9]/g, ''),
+                company_name: formData.get('company_name'),
+                industry: formData.get('industry'),
+                inquiry_type: formData.get('inquiry_type'),
+                message: formData.get('message'),
+                product_name: 'Direct Contact Form'
+            };
+
+            emailjs.send(window.EMAIL_CONFIG.SERVICE_ID, window.EMAIL_CONFIG.TEMPLATE_ID, templateParams)
+                .then(function (response) {
+                    form.style.display = 'none';
+                    successMsg.style.display = 'block';
+                    btn.innerHTML = originalBtnText;
+                    btn.disabled = false;
+                    form.reset();
+
+                    // Auto-hide success message and show form again after 5 seconds
+                    setTimeout(function () {
+                        successMsg.style.display = 'none';
+                        form.style.display = 'block';
+                        // Optional: Add a fade-in class or animation here if desired
+                    }, 5000);
+
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    alert('Failed to send inquiry. Please try again or contact us directly.');
+                    btn.innerHTML = originalBtnText;
+                    btn.disabled = false;
+                });
+        });
+    </script>
+    <!-- Get Quote Modal -->
+    <div class="quote-modal-overlay" id="quoteModal">
+        <div class="quote-modal-content">
+            <button class="modal-close-btn" onclick="closeQuoteModal()">&times;</button>
+
+            <div class="quote-modal-header">
+                <div class="modal-badge">TECH-RFQ // 2026</div>
+                <h2>Project Analysis Request</h2>
+                <div class="h-line" style="width: 50px; background: var(--white); margin: 20px 0; opacity: 0.3;"></div>
+                <p>Submit your specifications for a comprehensive engineering evaluation.</p>
+            </div>
+
+            <form id="modalQuoteForm">
+                <input type="hidden" id="modalProductTarget" name="product_name">
+
+                <div class="modal-form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="modalClientName" name="client_name" required placeholder="John Doe">
+                </div>
+
+                <div class="modal-form-group">
+                    <label>Business Email</label>
+                    <input type="email" id="modalClientEmail" name="client_email" required
+                        placeholder="john@company.com">
+                </div>
+
+                <div class="modal-form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" id="modalClientPhone" name="client_phone" required
+                        placeholder="+1 (555) 000-0000">
+                </div>
+
+                <div class="modal-form-group">
+                    <label>Company Name</label>
+                    <input type="text" id="modalCompany" name="company_name" placeholder="Optional">
+                </div>
+
+                <div class="modal-form-group">
+                    <label>Inquiry Type</label>
+                    <select id="modalInquiryType" name="inquiry_type">
+                        <option value="Standard Quote">Standard Quote</option>
+                        <option value="Custom Engineering">Custom Engineering</option>
+                        <option value="Bulk Order">Bulk Order</option>
+                    </select>
+                </div>
+
+                <div class="modal-form-group">
+                    <label>Details / Requirements</label>
+                    <textarea id="modalMessage" name="message" rows="3"
+                        placeholder="Please specify quantity, material, or dimensions..."></textarea>
+                </div>
+
+                <button type="submit" class="modal-submit-btn">
+                    Send Request <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </form>
+
+            <div class="modal-success" id="modalSuccessMsg">
+                <i class="fas fa-check-circle"></i>
+                <h3>Request Received!</h3>
+                <p>Our engineering team will contact you shortly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- EmailJS Integration -->
+    <script type="text/javascript" src="js/email-config.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init(window.EMAIL_CONFIG.PUBLIC_KEY);
+        })();
+
+        // Modal Logic
+        window.openQuoteModal = function (e, productName) {
+            if (e) e.preventDefault();
+            const modal = document.getElementById('quoteModal');
+            const productInput = document.getElementById('modalProductTarget');
+            const form = document.getElementById('modalQuoteForm');
+            const successMsg = document.getElementById('modalSuccessMsg');
+
+            if (modal) {
+                modal.classList.add('active');
+                if (productInput && productName) {
+                    productInput.value = productName;
+                }
+                // Reset form state
+                if (form) {
+                    form.style.display = 'block';
+                    form.reset();
+                }
+                if (successMsg) successMsg.style.display = 'none';
+            }
+        };
+
+        window.closeQuoteModal = function () {
+            const modal = document.getElementById('quoteModal');
+            if (modal) modal.classList.remove('active');
+        };
+
+        // Close on outside click
+        document.getElementById('quoteModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeQuoteModal();
+            }
+        });
+
+        // Handle Form Submission
+        document.getElementById('modalQuoteForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const btn = this.querySelector('button[type="submit"]');
+            const originalBtnText = btn.innerHTML;
+            btn.innerHTML = 'Sending...';
+            btn.disabled = true;
+
+            // Prepare template parameters
+            const templateParams = {
+                // My Custom Template Variables
+                product_name: document.getElementById('modalProductTarget').value || 'General Inquiry',
+                client_name: document.getElementById('modalClientName').value,
+                client_email: document.getElementById('modalClientEmail').value,
+                client_phone: document.getElementById('modalClientPhone').value,
+                company_name: document.getElementById('modalCompany').value,
+                inquiry_type: document.getElementById('modalInquiryType').value,
+                message: document.getElementById('modalMessage').value,
+                client_phone_clean: document.getElementById('modalClientPhone').value.replace(/[^0-9]/g, ''),
+
+                // Standard/Default Fail-safes
+                from_name: document.getElementById('modalClientName').value,
+                name: document.getElementById('modalClientName').value,
+                email: document.getElementById('modalClientEmail').value,
+                reply_to: document.getElementById('modalClientEmail').value,
+                to_name: 'Angel Spring Team',
+                subject: 'Quote: ' + (document.getElementById('modalProductTarget').value || 'General')
+            };
+
+            console.log("Sending Template Params:", templateParams);
+
+            emailjs.send('service_1eclz99', 'template_ljelssq', templateParams)
+                .then(function (response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('modalQuoteForm').style.display = 'none';
+                    document.getElementById('modalSuccessMsg').style.display = 'block';
+                    btn.innerHTML = originalBtnText;
+                    btn.disabled = false;
+
+                    setTimeout(closeQuoteModal, 3000);
+                }, function (error) {
+                    console.log('FAILED...', error);
+                    alert('EmailJS Error: ' + JSON.stringify(error));
+                    btn.innerHTML = originalBtnText;
+                    btn.disabled = false;
+                });
+        });
+
+        // Auto Attach to Buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const quoteBtns = document.querySelectorAll('.nav-cta, .nav-cta-mobile');
+            quoteBtns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    openQuoteModal(e, 'General Inquiry');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

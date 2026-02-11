@@ -1,0 +1,262 @@
+/* Premium Slick Slider for Other Products Section */
+.products-slider-wrapper {
+    max-width: 1400px;
+    margin: 60px auto 0;
+    padding: 0 5%;
+    position: relative;
+    z-index: 10;
+}
+
+.product-slide {
+    padding: 0 15px;
+    outline: none;
+}
+
+.product-card-premium {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 480px;
+}
+
+.product-img-container {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.01);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.product-category-tag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.product-card-premium img {
+    max-height: 100%;
+    width: auto !important;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card-premium:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-10px);
+}
+
+.product-card-premium:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.product-card-premium h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+}
+
+.product-card-premium p {
+    color: var(--steel-grey);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.product-explore-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+    padding: 10px 25px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.product-explore-btn:hover {
+    background: var(--white);
+    color: #000;
+    border-color: var(--white);
+}
+
+/* Slick Navigation - Premium Glassmorphic Design */
+.slick-prev-custom, .slick-next-custom {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70px !important;
+    height: 70px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 50% !important;
+    color: var(--white) !important;
+    font-size: 1.2rem !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    z-index: 100;
+    outline: none !important;
+    cursor: pointer;
+}
+
+.slick-prev-custom:hover, .slick-next-custom:hover {
+    background: var(--white) !important;
+    color: #000 !important;
+    border-color: var(--white) !important;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+.slick-prev-custom i, .slick-next-custom i {
+    transition: transform 0.3s ease;
+}
+
+.slick-prev-custom:hover i {
+    transform: translateX(-3px);
+}
+
+.slick-next-custom:hover i {
+    transform: translateX(3px);
+}
+
+.slick-prev-custom {
+    left: -80px !important;
+}
+
+.slick-next-custom {
+    right: -80px !important;
+}
+
+/* Responsive Navigation Positioning */
+@media (max-width: 1550px) {
+    .slick-prev-custom { left: -20px !important; }
+    .slick-next-custom { right: -20px !important; }
+}
+
+@media (max-width: 1200px) {
+    .slick-prev-custom, .slick-next-custom {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 1rem !important;
+        display: none !important; /* Hide arrows on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .products-slider-wrapper {
+        padding: 0 10px;
+    }
+    .product-card-premium {
+        padding: 40px 20px;
+    }
+    
+    /* Center Mode Adjustments for Mobile */
+    .slick-center .product-card-premium {
+        transform: scale(1.02); /* Reduced scaling for mobile */
+        border-color: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card-premium {
+        padding: 30px 15px;
+        min-height: 420px;
+    }
+    .product-img-container {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .product-card-premium h4 {
+        font-size: 1rem;
+    }
+    .product-category-tag {
+        font-size: 0.6rem;
+        padding: 4px 10px;
+    }
+    .product-explore-btn {
+        padding: 8px 20px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .product-card-premium {
+        padding: 25px 12px;
+        min-height: 380px;
+    }
+    .product-img-container {
+        height: 130px;
+    }
+    .product-card-premium h4 {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+}
+
+/* Slick Dots - Premium Pagination */
+.products-slider .slick-dots {
+    bottom: -60px;
+    display: flex !important;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.products-slider .slick-dots li {
+    margin: 0;
+}
+
+.products-slider .slick-dots li button {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.products-slider .slick-dots li button:before {
+    display: none;
+}
+
+.products-slider .slick-dots li.slick-active button {
+    background: var(--white);
+    transform: scale(1.4);
+}
