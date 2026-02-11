@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 
-<body class="cursor-none">
+<body>
 
   <!-- Industrial System Ticker -->
   <div class="system-ticker">
@@ -289,18 +289,18 @@
         <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 25px; letter-spacing: 2px;">Core
           Solutions</h4>
         <ul class="footer-links">
-          <li><a href="products.html#compression"><i class="fas fa-chevron-right"
+          <li><a href="products.html?filter=compression"><i class="fas fa-chevron-right"
                 style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Compression
-              Systems</a></li>
-          <li><a href="products.html#tension"><i class="fas fa-chevron-right"
-                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Tension &
-              Extension</a></li>
-          <li><a href="products.html#stainless"><i class="fas fa-chevron-right"
-                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Stainless Elite
-              Series</a></li>
-          <li><a href="products.html#industrial"><i class="fas fa-chevron-right"
-                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Industrial Heavy
-              Duty</a></li>
+              Springs</a></li>
+          <li><a href="products.html?filter=industrial"><i class="fas fa-chevron-right"
+                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Industrial
+              Springs</a></li>
+          <li><a href="products.html?filter=stainless"><i class="fas fa-chevron-right"
+                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Stainless Steel
+              Springs</a></li>
+          <li><a href="products.html?filter=other"><i class="fas fa-chevron-right"
+                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Other
+              Products</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -361,96 +361,169 @@
       // Fallback: Comprehensive Product Catalog with Full Details
       if (!productData) {
         const productCatalog = {
-          'compression-series': {
-            title: 'Compression Series',
-            desc: 'High-fatigue load-rated Grade 304 precision coils for critical industrial machinery.',
-            detailedDesc: 'Our Compression Series represents the pinnacle of spring engineering, featuring precision-wound coils manufactured from premium SS 304/316 stainless steel. Each spring undergoes rigorous stress-relief treatment and dimensional verification to ensure consistent performance under extreme load conditions.',
-            img: 'assets/prod-compression.png',
+          'wide-range-of-ss-compression-spring': {
+            title: 'Wide Range of SS Compression Spring',
+            desc: 'Our product range includes a wide range of SS Compression Spring, SS Compression Springs, Compression Springs, and Stainless Steel Compression Spring.',
+            detailedDesc: 'We offer a comprehensive selection of precision-engineered stainless steel compression springs. Our expertise covers a wide spectrum of industrial applications, ensuring that every client finds the exact specifications they require for critical mechanical systems.',
+            img: 'assets/a_wide_range_of_SS_Compression_Spring-removebg-preview.png',
             category: 'compression',
             specs: {
               "Material": "SS 304/316",
-              "Wire Diameter": "0.5mm - 12mm",
-              "Outer Diameter": "5mm - 200mm",
-              "Free Length": "10mm - 500mm",
-              "Load Capacity": "Up to 5000N",
-              "Temperature Range": "-40°C to 250°C",
-              "Surface Finish": "Passivated/Zinc",
+              "Range": "Elite Series",
+              "Standards": "ISO 9001:2015",
+              "Grade": "Industrial Premium"
+            },
+            features: ["Extensive Size Range", "High Fatigue Life", "Precision Wound", "Corrosion Resistant", "Custom Coil Pitch", "Rapid Delivery"]
+          },
+          'ss-compression-spring': {
+            title: 'SS Compression Spring',
+            desc: 'Load-rated Grade 304/316 precision compression coils for critical industrial machinery.',
+            detailedDesc: 'Our SS Compression Springs represent the pinnacle of spring engineering, manufactured from premium SS 304/316 stainless steel. Each spring undergoes rigorous stress-relief treatment and dimensional verification to ensure consistent performance under extreme load conditions. Our product range includes a wide range of SS Compression Springs.',
+            img: 'assets/Compression_Spring-removebg-preview.png',
+            category: 'compression',
+            specs: {
+              "Material": "SS 304/316",
+              "Wire Diameter": "0.5mm - 20mm",
+              "Finish": "Precision Ground",
               "ISO Compliance": "9001:2015"
             },
-            features: ["High Temperature Resistant up to 250°C", "Precision Wire Wound ±0.05mm", "Corrosion Protection Coating", "Stress Relieved Finish", "Fatigue Tested 10M+ Cycles", "Custom End Configurations"]
+            features: ["High fatigue resistance", "Anti-corrosive coating", "Precision wound", "Heat treated finish"]
           },
-          'tensionextension': {
-            title: 'Tension/Extension',
-            desc: 'Precision return-force systems with aerospace geometry for high-cycle applications.',
-            detailedDesc: 'Engineered for applications demanding precise return forces, our Tension/Extension springs feature reinforced hook ends and optimized coil geometry. Manufactured from high-carbon steel with optional stainless variants, these springs excel in dynamic loading scenarios.',
-            img: 'assets/prod-tension.png',
-            category: 'tension',
-            specs: {
-              "Material": "Carbon Steel / SS 316",
-              "Wire Diameter": "0.3mm - 8mm",
-              "Body Length": "15mm - 300mm",
-              "Hook Type": "Machine/German/Extended",
-              "Extension Rate": "0.1N/mm - 500N/mm",
-              "Cycle Life": "1M+ Guaranteed",
-              "End Configuration": "Custom Available",
-              "Grade": "Aerospace Quality"
-            },
-            features: ["Secure Machine Hooks 3x Safety", "Consistent Tension Rate ±2%", "High Fatigue Life 1M+ Cycles", "Optimized Coil Geometry", "Reinforced Hook Points", "Electropolished Options"]
+          'ss-304-compression-spring': {
+            title: 'SS 304 Compression Spring',
+            desc: 'Standard 304 grade stainless steel compression springs with optimized pitch.',
+            detailedDesc: 'Standard 304 grade stainless steel compression springs with optimized pitch for heavy machinery and automation controls. Balanced for cost and performance.',
+            img: 'assets/SS_304_Compression_Spring-removebg-preview.png',
+            category: 'compression',
+            specs: { "Material": "SS 304", "Wire Dia": "1.0mm - 15mm", "Temp": "250°C" },
+            features: ["Standard compliance", "Uniform pitch", "Structural integrity"]
           },
-          'stainless-elite': {
-            title: 'Stainless Elite',
-            desc: 'Precipitation-hardened alloys for medical & marine use with extreme corrosion resistance.',
-            detailedDesc: 'The Stainless Elite series utilizes premium SS 316L medical-grade alloy with optional precipitation hardening for superior strength-to-weight ratios. Designed for the most demanding environments, these springs resist corrosion from saltwater, chemicals, and biological fluids.',
-            img: 'assets/prod-compression.png',
-            category: 'stainless',
-            specs: {
-              "Alloy": "SS 316L / 17-7 PH",
-              "Purity": "Medical Grade",
-              "Corrosion Resistance": "ASTM B117 5000hrs",
-              "Surface Finish": "Ra 0.2μm Electropolished",
-              "Biocompatibility": "ISO 10993 Certified",
-              "Tensile Strength": "Up to 2000 MPa",
-              "Magnetic Properties": "Non-Magnetic",
-              "Sterilization": "Autoclave Compatible"
-            },
-            features: ["Medical Grade Biocompatibility", "Mirror Finish Electropolishing", "Extreme Rust Proofing", "ISO 13485 Compliant", "Non-Magnetic MRI Safe", "Autoclave Sterilization Safe"]
+          '10mm-stainless-steel-compression-spring': {
+            title: '10mm Stainless Steel Compression Spring',
+            desc: 'Heavy-duty 10mm gauge stainless steel springs for architectural and industrial dampening.',
+            detailedDesc: 'Heavy-duty 10mm gauge stainless steel springs specifically engineered for high-impact absorption and long-term structural support. Manufactured from premium SS 304/316 to ensure maximum longevity in demanding environments.',
+            img: 'assets/10mm_Stainless_Steel_Compression_Spring-removebg-preview.png',
+            category: 'compression',
+            specs: { "Material": "SS 304/316", "Wire Dia": "10mm", "Load Cap": "5000N", "Corrosion": "Extreme" },
+            features: ["Heavy load ready", "Stainless durability", "Architectural grade", "Vibration Isolation", "Stress Relieved"]
           },
-          'heavy-industrial': {
-            title: 'Heavy Industrial',
-            desc: 'Maximum payload manufacturing automation setups with zero deformation guarantee.',
-            detailedDesc: 'Built for the toughest industrial environments, our Heavy Industrial springs are engineered to handle extreme loads without permanent deformation. Manufactured from high-carbon alloy steel with specialized heat treatment, these springs deliver consistent performance under continuous heavy-duty cycling.',
-            img: 'assets/prod-industrial.png',
+          'wire-spring-steel-spring': {
+            title: 'Wire Spring Steel Spring',
+            desc: 'Leading Manufacturer of Wire Spring Steel Spring from Ahmedabad, India.',
+            detailedDesc: 'We are a leading Manufacturer of Wire Spring Steel Spring, Ss Spring Chiill, Tension Springs 1.0mm, Ms Spring, Tension Spring and Tension Springs from Ahmedabad, India. Engineered for maximum return force and high durability in industrial environments.',
+            img: 'assets/Wire_Spring_Steel_Spring-removebg-preview (1).png',
             category: 'industrial',
-            specs: {
-              "Material": "High Carbon Alloy Steel",
-              "Load Capacity": "500N - 50,000N",
-              "Wire Diameter": "5mm - 25mm",
-              "Coating": "Zinc/Epoxy/PTFE",
-              "Operating Temp": "-20°C to 180°C",
-              "Proof Load": "125% Rated Capacity",
-              "Deflection": "Up to 200mm",
-              "Environment": "IP65 Rated"
-            },
-            features: ["Impact Resistant Design", "Heavy Load Duty up to 50kN", "Multi-Layer Surface Treatment", "Zero Permanent Deformation", "Chemical Resistant Coatings", "Extended Service Life 5M+ Cycles"]
+            specs: { "Material": "Carbon Steel", "Type": "Wire Form", "Origin": "Ahmedabad", "Finish": "Oil Tempered" },
+            features: ["Industrial strength", "Oil-quenched", "Fatigue resistance", "Precision engineered"]
           },
-          'custom-components': {
-            title: 'Custom Components',
-            desc: 'Proprietary multi-axis CNC forming solutions with rapid prototyping capabilities.',
-            detailedDesc: 'Our Custom Components division specializes in complex spring geometries that push the boundaries of conventional manufacturing. Using advanced multi-axis CNC spring formers and proprietary CAD/CAM software, we transform your unique design requirements into precision-engineered reality.',
-            img: 'assets/prod-flat.png',
-            category: 'custom',
-            specs: {
-              "Process": "CNC Multi-Axis Forming",
-              "Tolerance": "±0.01mm Dimensional",
-              "Material Range": "50+ Alloy Options",
-              "Complexity": "Up to 12 Bends",
-              "Prototype Lead Time": "3-5 Days",
-              "Production Volume": "1 to 1M+ Units",
-              "Engineering Support": "Full CAD/FEA",
-              "Quality Control": "CMM Verified"
-            },
-            features: ["Rapid Prototyping 3-5 Days", "Complex Geometries Multi-Axis", "Material Variety 50+ Alloys", "Full Engineering Support CAD/FEA", "Low to High Volume Production", "CMM Dimensional Verification"]
-          }
+          'tension-springs-1.0mm': {
+            title: 'Tension Springs 1.0mm',
+            desc: 'Precision 1.0mm gauge tension springs with reinforced mounting hooks.',
+            detailedDesc: 'Precision 1.0mm gauge tension springs with reinforced mounting hooks for accurate return force. Essential for mechanical linkages and industrial automation.',
+            img: 'assets/Tension_Springs_1.0mm-removebg-preview.png',
+            category: 'industrial',
+            specs: { "Wire Dia": "1.0mm", "End": "Machine Hook", "Material": "Carbon Steel" },
+            features: ["Secure hooking", "Consistent tension", "Cycle optimized"]
+          },
+          'ms-spring': {
+            title: 'Ms Spring',
+            desc: 'Leading Manufacturer of Ms Spring from Ahmedabad, India.',
+            detailedDesc: 'General purpose mild steel heavy-duty springs for large-scale manufacturing and heavy press machinery. We are a leading Manufacturer of Ms Spring from Ahmedabad, India.',
+            img: 'assets/Ms_Spring-removebg-preview.png',
+            category: 'industrial',
+            specs: { "Material": "Mild Steel", "Size": "Custom", "Strength": "Industrial", "Origin": "Ahmedabad" },
+            features: ["Robust construction", "Versatile fit", "Cost efficient", "Heavy Load Capacity"]
+          },
+          'tension-spring': {
+            title: 'Tension Spring',
+            desc: 'Leading Manufacturer of Tension Spring and Tension Springs from Ahmedabad.',
+            detailedDesc: 'We are technical experts in Tension Spring and Tension Springs manufacturing from Ahmedabad India. Our springs are precision-engineered for high return force and long-cycle reliability.',
+            img: 'assets/Tension_Springs-removebg-preview.png',
+            category: 'industrial',
+            specs: { "Type": "Tension", "Material": "Spring Steel", "Origin": "Ahmedabad", "Finish": "Natural" },
+            features: ["High return force", "Durable coils", "Custom end forms", "Industrial grade"]
+          },
+          'stainless-steel-spring': {
+            title: 'Stainless Steel Spring',
+            desc: 'Technical experts in high-precision Stainless Steel Spring manufacturing.',
+            detailedDesc: 'We are technical experts in Stainless Steel Spring manufacturing. Our high-precision springs are designed for maximum corrosion resistance and structural durability in the most demanding industrial environments.',
+            img: 'assets/Stainless_Steel_Spring-removebg-preview.png',
+            category: 'stainless',
+            specs: { "Material": "Stainless Steel", "Grade": "304/316", "Origin": "Ahmedabad", "Finish": "Mirror Polish" },
+            features: ["Extreme durability", "High corrosion resistance", "Ahmedabad quality", "Precision engineering"]
+          },
+          'ss-spring-chiill': {
+            title: 'Ss Spring Chiill',
+            desc: 'Specifically chilled and heat-treated stainless variants for extreme rigidity.',
+            detailedDesc: 'Specifically chilled and heat-treated stainless variants for extreme rigidity and dimensional stability at low temperatures. We provide Ss Spring Chiill from Ahmedabad, India for laboratory and precision machinery.',
+            img: 'assets/Ss_Spring_Chiill-removebg-preview.png',
+            category: 'industrial',
+            specs: { "Treatment": "Cryogenic", "Material": "SS 304H", "Stability": "Ultra-High", "Origin": "Ahmedabad" },
+            features: ["Cryogenic stabilized", "Low temp resilience", "Precision heat treated", "Ahmedabad Factory"]
+          },
+          'ss-304-spring': {
+            title: 'SS 304 Spring',
+            desc: 'Pioneers in the industry, we offer SS 304 Spring, Stainless Steel Spring, Stainless Steel 304 Spring, Spring Steel Spring, SS Spring and ss-spring from India.',
+            detailedDesc: 'Pioneers in the industry, we offer SS 304 Spring, Stainless Steel Spring, Stainless Steel 304 Spring, Spring Steel Spring, SS Spring and ss-spring from India. Specifically engineered for diverse industrial and high-purity sectors.',
+            img: 'assets/SS_304_Spring-removebg-preview.png',
+            category: 'stainless',
+            specs: { "Grade": "SS 304", "Origin": "India", "Resist": "High", "Application": "Medical/Marine" },
+            features: ["Industry pioneers", "Salt-spray resistant", "Precision wound", "ISO Standardized"]
+          },
+          'stainless-steel-304-spring': {
+            title: 'Stainless Steel 304 Spring',
+            desc: 'High-grade Stainless Steel 304 Spring for medical and food-grade environments.',
+            detailedDesc: 'High-grade Stainless Steel 304 Spring designed for critical performance in medical and food-grade environments. We specialize in SS Spring and ss-spring manufacturing with mirror-finish options.',
+            img: 'assets/Stainless_Steel_304_Spring-removebg-preview.png',
+            category: 'stainless',
+            specs: { "Material": "SS 304", "Finish": "Polished", "Purity": "Food Grade", "Application": "Medical" },
+            features: ["Corrosion proof", "Bio-compatible", "High durability", "Mirror finish"]
+          },
+          'spring-steel-spring': {
+            title: 'Spring Steel Spring',
+            desc: 'Advanced metallurgical Spring Steel Spring offering the highest fatigue life.',
+            detailedDesc: 'Advanced metallurgical Spring Steel Spring offering the highest fatigue life in its class. We are pioneers in Stainless Steel Spring and Spring Steel Spring solutions from India.',
+            img: 'assets/Spring_Steel_Spring-removebg-preview.png',
+            category: 'stainless',
+            specs: { "Alloy": "Standard Steel", "Fatigue": "Infinite", "Finish": "Oil Tempered" },
+            features: ["Infinite fatigue life", "Zero structural flaws", "High performance", "Industry leading reliability"]
+          },
+          'compression-spring': {
+            title: 'Compression Spring',
+            desc: 'General purpose Compression Spring manufacturing for diverse industrial applications.',
+            detailedDesc: 'We are technical experts in Compression Spring manufacturing. Our high-load Compression Spring solutions are engineered for structural integrity and reliable performance across all industrial sectors.',
+            img: 'assets/Compression_Spring-removebg-preview.png',
+            category: 'other',
+            specs: { "Type": "Compression", "Material": "Spring Steel", "Origin": "India", "Load": "Industrial Grade" },
+            features: ["High load capacity", "Uniform pitch", "Durable coils", "Precision manufactured"]
+          },
+          'tension-spring': {
+            title: 'Tension Spring',
+            desc: 'Reliable Tension Spring and Tension Springs for mechanical linkages.',
+            detailedDesc: 'We are leaders in Tension Spring and Tension Springs manufacturing. Our products are designed for extreme durability and accurate return force, ensuring long-term reliability in specialized industrial assemblies.',
+            img: 'assets/Tension_Springs-removebg-preview.png',
+            category: 'other',
+            specs: { "Type": "Tension", "Material": "Hardened Steel", "Origin": "India", "Ends": "Machine Loops" },
+            features: ["Consistent tension", "Secure hooks", "High cycle life", "Corrosion resistant"]
+          },
+          'taper-spring': {
+            title: 'Taper Spring',
+            desc: 'Expertly crafted Taper Spring and Taper Springs for industrial stability.',
+            detailedDesc: 'High-precision Taper Spring and Taper Springs designed for variable rate loads and anti-nesting solutions. Engineered for maximum stability in demanding mechanical environments.',
+            img: 'assets/Taper_Spring-removebg-preview.png',
+            category: 'other',
+            specs: { "Type": "Conical", "Material": "Spring Steel", "Origin": "Ahmedabad", "Stability": "High" },
+            features: ["Variable spring rate", "Anti-nesting", "Telescopic design", "Space saving"]
+          },
+          'automatic-springs': {
+            title: 'Automatic Springs',
+            desc: 'Designed for seamless integration into high-speed automatic production lines.',
+            detailedDesc: 'Designed for seamless integration into high-speed automatic production lines with anti-nesting geometry. Our Automatic Springs and Automatic Assembly Springs are engineered for high throughput and zero-maintenance operation.',
+            img: 'assets/Automatic_Springs-removebg-preview.png',
+            category: 'other',
+            specs: { "Type": "Automation-Grade", "Speed": "Industrial", "Precision": "High", "Material": "Spring Steel" },
+            features: ["Self-cleaning surface", "Anti-tangle geometry", "High throughput", "Precision reliability"]
+          },
         };
 
         productData = productCatalog[productTitle] || productCatalog['compression-series'];
@@ -539,44 +612,44 @@
       // Full Catalog Data for Slider
       const allItems = [
         {
-          title: 'Compression Series',
-          img: 'assets/prod-compression.png',
-          desc: 'High-fatigue load-rated Grade 304 precision coils.',
+          title: 'SS Compression Spring',
+          img: 'assets/Compression_Spring-removebg-preview.png',
+          desc: 'Load-rated Grade 304/316 precision compression coils.',
           category: 'compression',
-          specs: { "Material": "SS 304/316", "Duty": "Heavy Industrial", "Range": "Elite Series", "ISO": "9001:2015" },
-          features: ["High Temperature Resistant", "Precision Wire Wound", "Corrosion Protection", "Stress Relieved Finish"]
+          specs: { "Material": "SS 304/316", "Wire Dia": "0.5-20mm", "ISO": "9001:2015" },
+          features: ["Fatigue Resistance", "Anti-Corrosive", "Precision Wound"]
         },
         {
-          title: 'Tension/Extension',
-          img: 'assets/prod-tension.png',
-          desc: 'Precision return-force systems with aerospace geometry.',
-          category: 'tension',
-          specs: { "Material": "Carbon Steel", "Ends": "Reinforced", "Cycle Life": "1M+", "Grade": "Aerospace" },
-          features: ["Secure Machine Hooks", "Consistent Tension Rate", "High Fatigue Life", "Optimized Geometry"]
-        },
-        {
-          title: 'Stainless Elite',
-          img: 'assets/prod-compression.png',
-          desc: 'Precipitation-hardened alloys for medical & marine use.',
-          category: 'stainless',
-          specs: { "Alloy": "SS 316L", "Purity": "Medical", "Resistance": "Extreme", "Surface": "Electro-polished" },
-          features: ["Medical Compatibility", "Mirror Finish Options", "Rust Proofing", "ISO 13485 Compliant"]
-        },
-        {
-          title: 'Heavy Industrial',
-          img: 'assets/prod-industrial.png',
-          desc: 'Maximum payload manufacturing automation setups.',
+          title: 'Wire Spring Steel Spring',
+          img: 'assets/Wire_Spring_Steel_Spring-removebg-preview (1).png',
+          desc: 'Leading Manufacturer of Wire Spring Steel Springs.',
           category: 'industrial',
-          specs: { "Type": "Heavy Duty", "Payload": "High", "Environment": "Industrial", "Coating": "Zinc/Epoxy" },
-          features: ["Impact Resistant", "Heavy Load Duty", "Surface Treated", "Zero Deformation"]
+          specs: { "Material": "Carbon Steel", "Origin": "Ahmedabad", "Type": "Wire Form" },
+          features: ["Industrial Strength", "Oil-Quenched", "Fatigue Resistance"]
         },
         {
-          title: 'Custom Components',
-          img: 'assets/prod-flat.png',
-          desc: 'Proprietary multi-axis CNC forming solutions.',
-          category: 'custom',
-          specs: { "Process": "CNC Multi-Axis", "Tolerance": "±0.01mm", "Scope": "Prototypes", "Form": "Complex" },
-          features: ["Rapid Prototyping", "Complex Geometries", "Material Variety", "Engineering Support"]
+          title: 'SS 304 Spring Series',
+          img: 'assets/SS_304_Spring-removebg-preview.png',
+          desc: 'Industry pioneers in SS 304, SS Spring, and ss-spring variants.',
+          category: 'stainless',
+          specs: { "Grade": "SS 304", "Resist": "High", "Application": "Industrial" },
+          features: ["Anti-Fatigue", "Bio-Compatible", "Precision Wound"]
+        },
+        {
+          title: 'Precision Taper Spring',
+          img: 'assets/Taper_Spring-removebg-preview.png',
+          desc: 'Conical and tapered designs for variable rate loads.',
+          category: 'other',
+          specs: { "Type": "Conical", "Rate": "Variable", "Material": "SS 304" },
+          features: ["Anti-Tangle", "Space Saving", "Telescopic"]
+        },
+        {
+          title: 'Automatic Springs',
+          img: 'assets/Automatic_Springs-removebg-preview.png',
+          desc: 'High-speed automatic production line integration.',
+          category: 'other',
+          specs: { "Type": "Automation-Ready", "Precision": "High", "Speed": "Industrial" },
+          features: ["High Throughput", "Anti-Nesting", "Zero Maintenance"]
         }
       ];
 

@@ -21,18 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(hidePreloader, 4000);
     }
 
-    // Custom Cursor & Interaction Setup
-    const cursorDot = document.createElement('div');
-    const cursorOutline = document.createElement('div');
-    const bgGlow = document.createElement('div');
 
-    cursorDot.className = 'cursor-dot';
-    cursorOutline.className = 'cursor-outline';
-    bgGlow.className = 'bg-glow';
-
-    document.body.appendChild(cursorDot);
-    document.body.appendChild(cursorOutline);
-    document.body.appendChild(bgGlow);
 
     // Magnetic Interaction Setup
     const magneticElements = document.querySelectorAll('.btn, .social-link, .logo');
@@ -72,47 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Magnetic Pulse for Background
-    let cursorInited = false;
+    // Background Interactivity
     window.addEventListener('mousemove', (e) => {
-        const posX = e.clientX;
-        const posY = e.clientY;
-
-        if (!cursorInited) {
-            cursorDot.style.opacity = "1";
-            cursorOutline.style.opacity = "1";
-            cursorInited = true;
-        }
-
-        cursorDot.style.left = `${posX}px`;
-        cursorDot.style.top = `${posY}px`;
-
-        cursorOutline.animate({
-            left: `${posX}px`,
-            top: `${posY}px`
-        }, { duration: 150, fill: "forwards" });
-
-        document.documentElement.style.setProperty('--x', posX + 'px');
-        document.documentElement.style.setProperty('--y', posY + 'px');
-    });
-
-    // Cursor Hover Effect
-    document.body.addEventListener('mouseover', (e) => {
-        const target = e.target.closest('a, button, .product-card, .social-link, .hq-badge, .filter-btn, .modal-close, .fab-btn, .nav-toggle');
-        if (target) {
-            document.body.classList.add('cursor-hover');
-            if (target.classList.contains('modal-close')) {
-                document.body.classList.add('cursor-exit');
-            }
-        }
-    });
-
-    document.body.addEventListener('mouseout', (e) => {
-        const target = e.target.closest('a, button, .product-card, .social-link, .hq-badge, .filter-btn, .modal-close, .fab-btn, .nav-toggle');
-        if (target) {
-            document.body.classList.remove('cursor-hover');
-            document.body.classList.remove('cursor-exit');
-        }
+        document.documentElement.style.setProperty('--x', e.clientX + 'px');
+        document.documentElement.style.setProperty('--y', e.clientY + 'px');
     });
 
     // Mobile Navigation Toggle
@@ -232,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Persist data for the detail page
         sessionStorage.setItem('activeProductDetail', JSON.stringify(productData));
-        
+
         // Redirect with a clean URL parameter for SEO and context
         const slug = title.toLowerCase().replace(/ /g, '-').replace(/[^\w-]+/g, '');
         window.location.href = `product-detail.html?name=${slug}`;
@@ -242,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateElements = document.querySelectorAll('.animate-up, section, footer, .product-card, .feature-item, .reveal-text, .counter-section, .footer-grid, .footer-bottom');
     animateElements.forEach(el => {
         observer.observe(el);
-        
+
         // Safety: If element is already in viewport, activate it
         const rect = el.getBoundingClientRect();
         if (rect.top < window.innerHeight && rect.bottom > 0) {

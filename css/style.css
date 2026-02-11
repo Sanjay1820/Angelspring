@@ -22,27 +22,35 @@
     scroll-behavior: smooth;
 }
 
-@media (min-width: 1025px) {
-
-    html,
-    body {
-        cursor: none !important;
-    }
-
-    a,
-    button,
-    .btn,
-    .product-card,
-    .social-link {
-        cursor: none !important;
-    }
+/* Cursor styles removed to show system cursor */
+* {
+    cursor: auto !important;
 }
+
 
 @media (max-width: 1024px) {
     * {
         cursor: auto !important;
     }
 }
+
+/* Ensure default cursor is always visible on all elements */
+html,
+body,
+a,
+button,
+.btn,
+.product-card,
+.social-link {
+    cursor: auto !important;
+}
+
+/* Hide the custom cursor elements as they might be confusing or broken */
+.cursor-dot,
+.cursor-outline {
+    display: none !important;
+}
+
 
 /* Industrial Data Ticker */
 .system-ticker {
@@ -128,32 +136,54 @@
 }
 
 .spring-logo {
-    width: 80px;
-    height: 80px;
+    width: 250px;
+    /* Increased from 150px */
+    height: 250px;
+    /* Increased from 150px */
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .spring-logo i,
 .spring-logo img {
-    font-size: 3rem;
+    font-size: 8rem;
+    /* Increased from 5rem */
     color: var(--white);
     animation: bounceSpring 1.5s ease-in-out infinite;
     max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
 .loader-text {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    /* Increased from 2.2rem */
     font-weight: 800;
-    letter-spacing: 4px;
+    letter-spacing: 10px;
+    /* Increased letter-spacing for premium feel */
     color: var(--white);
     text-transform: uppercase;
     position: relative;
+    margin-top: 15px;
 }
+
+@media (max-width: 768px) {
+    .spring-logo {
+        width: 180px;
+        /* Increased from 120px */
+        height: 180px;
+    }
+
+    .loader-text {
+        font-size: 1.8rem;
+        letter-spacing: 6px;
+    }
+}
+
 
 .loader-text span {
     color: var(--steel-grey);
@@ -576,10 +606,33 @@ h6 {
 }
 
 .logo img {
-    height: 50px;
+    height: 120px;
+    /* Increased from 80px */
     width: auto;
     object-fit: contain;
+    transition: var(--transition-smooth);
 }
+
+#main-header.scrolled .logo img {
+    height: 80px;
+    /* Increased from 60px */
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 80px;
+        /* Significantly larger on mobile */
+    }
+
+    #main-header {
+        padding: 10px 5%;
+    }
+
+    #main-header.scrolled {
+        padding: 8px 5%;
+    }
+}
+
 
 nav ul {
     display: flex;
@@ -755,6 +808,7 @@ section {
     align-items: flex-start;
     /* Align to top (respecting padding) instead of center to avoid overlap */
 }
+
 .secondary-hero .hero-content {
     width: 100%;
     margin-top: 40px;
@@ -909,18 +963,26 @@ section {
 
 .product-image {
     width: 100%;
-    height: 200px;
+    height: 250px;
+    background: #fff;
+    /* Changed from black/dark to white */
     overflow: hidden;
-    border-radius: 4px;
-    margin-bottom: 15px;
+    position: relative;
+    padding: 15px;
+    /* Added padding for removebg images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    object-fit: contain;
+    /* Changed from cover to contain for full product visibility */
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
 
 .product-card:hover .product-image img {
     transform: scale(1.1);
@@ -1207,17 +1269,25 @@ section {
 
 .product-image {
     height: 250px;
-    background: #000;
+    background: #fff;
+    /* Changed to white */
     overflow: hidden;
     position: relative;
+    padding: 15px;
+    /* Added padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    /* Contain for removebg images */
     transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
+
 
 @media (max-width: 768px) {
     .product-image {

@@ -13,7 +13,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
-<body class="cursor-none">
+<body>
 
     <!-- Industrial System Ticker -->
     <div class="system-ticker">
@@ -97,22 +97,43 @@
     <section id="product-catalog" class="catalog-section">
         <!-- Professional Category Filters -->
         <div class="filters-container">
-            <button class="filter-btn active" data-filter="all">Full Catalog</button>
-            <button class="filter-btn" data-filter="compression">Compression Series</button>
-            <button class="filter-btn" data-filter="tension">Tension/Extension</button>
-            <button class="filter-btn" data-filter="stainless">Stainless Elite</button>
-            <button class="filter-btn" data-filter="industrial">Heavy Industrial</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="compression">Compression Springs</button>
+            <button class="filter-btn" data-filter="industrial">Industrial Springs</button>
+            <button class="filter-btn" data-filter="stainless">Stainless Steel Springs</button>
+            <button class="filter-btn" data-filter="other">Other Products</button>
         </div>
 
         <div class="product-grid" id="main-catalog-grid">
             <!-- COMPRESSION SERIES -->
+            <div class="product-card" data-category="compression" data-title="Wide Range of SS Compression Spring"
+                data-description="Our product range includes a wide range of SS Compression Spring, SS Compression Springs, Compression Springs, and Stainless Steel Compression Spring."
+                data-image="assets/a_wide_range_of_SS_Compression_Spring-removebg-preview.png"
+                data-specs='{"Range": "Elite Series", "Material": "SS 304/316", "Duty": "Industrial", "Grade": "Premium"}'
+                data-features='["Extensive Size Range", "High Fatigue Life", "Precision Wound", "Corrosion Resistant"]'>
+                <div class="product-image">
+                    <img src="assets/a_wide_range_of_SS_Compression_Spring-removebg-preview.png"
+                        alt="Wide Range of SS Compression Spring">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">Full Range Expertise</span>
+                    <h3>Wide Range of SS Compression Spring</h3>
+                    <p>Extensive selection of precision SS compression springs for all industrial needs.</p>
+                    <div class="product-actions" style="display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+
             <div class="product-card" data-category="compression" data-title="SS Compression Spring"
-                data-description="Load-rated Grade 304/316 precision compression coils for critical valving and industrial systems. Designed for maximum duty cycles in demanding mechanical environments."
-                data-image="assets/prod-compression.png"
+                data-description="Load-rated Grade 304/316 precision compression coils for critical valving and industrial systems. Designed for maximum duty cycles."
+                data-image="assets/Compression_Spring-removebg-preview.png"
                 data-specs='{"Material": "SS 304/316", "Wire Dia": "0.5mm - 20mm", "Load Cap": "1500N", "Tolerance": "±2%"}'
                 data-features='["Anti-Corrosive Coating", "High Fatigue Resistance", "Heat Treated Finish", "Precision Wound"]'>
                 <div class="product-image">
-                    <img src="assets/prod-compression.png" alt="SS Compression Spring">
+                    <img src="assets/Compression_Spring-removebg-preview.png" alt="SS Compression Spring">
                 </div>
                 <div class="product-info">
                     <span class="product-meta">Precision Grade</span>
@@ -133,15 +154,15 @@
 
             <div class="product-card" data-category="compression" data-title="SS 304 Compression"
                 data-description="High-tensile SS304 industrial compression springs with optimized pitch for heavy machinery and automation controls. Balanced for cost and performance."
-                data-image="assets/prod-compression.png"
+                data-image="assets/SS_304_Compression_Spring-removebg-preview.png"
                 data-specs='{"Material": "Standard 304", "Wire Dia": "1.0mm - 25mm", "Max Temp": "250°C", "Coils": "6-12"}'
                 data-features='["Standard Compliance", "Uniform Pitch", "Structural Integrity", "Ready for Deployment"]'>
                 <div class="product-image">
-                    <img src="assets/prod-compression.png" alt="SS 304 Compression Spring">
+                    <img src="assets/SS_304_Compression_Spring-removebg-preview.png" alt="SS 304 Compression Spring">
                 </div>
                 <div class="product-info">
                     <span class="product-meta">Standard 304</span>
-                    <h3>SS 304 Compression</h3>
+                    <h3>SS 304 Compression Spring</h3>
                     <p>High-tensile SS304 industrial compression springs with optimized pitch.</p>
                     <div class="product-specs-preview">
                         <div class="mini-spec">Wire Dia <strong>1.0-25mm</strong></div>
@@ -156,22 +177,23 @@
                 </div>
             </div>
 
-            <div class="product-card" data-category="compression" data-title="10 Mm Compression"
-                data-description="Heavy-duty 10mm gauge springs for architectural and industrial dampening. Built for high-impact absorption and long-term structural support."
-                data-image="assets/prod-industrial.png"
-                data-specs='{"Material": "Tempered Steel", "Wire Dia": "10mm", "Load Cap": "5000N", "Coating": "Zinc Plated"}'
-                data-features='["Heavy Load Ready", "Galvanized Protection", "Architectural Grade", "Vibration Isolation"]'>
+            <div class="product-card" data-category="compression" data-title="10mm Stainless Steel Compression Spring"
+                data-description="Heavy-duty 10mm gauge stainless steel springs for architectural and industrial dampening. Built for high-impact absorption and long-term structural support in corrosive environments."
+                data-image="assets/10mm_Stainless_Steel_Compression_Spring-removebg-preview.png"
+                data-specs='{"Material": "SS 304/316", "Wire Dia": "10mm", "Load Cap": "5000N", "Corrosion": "High"}'
+                data-features='["Heavy Load Ready", "Stainless Durability", "Architectural Grade", "Vibration Isolation"]'>
                 <div class="product-image">
-                    <img src="assets/prod-industrial.png" alt="10 Mm Compression Spring">
+                    <img src="assets/10mm_Stainless_Steel_Compression_Spring-removebg-preview.png"
+                        alt="10mm Stainless Steel Compression Spring">
                 </div>
                 <div class="product-info">
-                    <span class="product-meta">10mm Gauge</span>
-                    <h3>10 Mm Compression</h3>
-                    <p>Heavy-duty 10mm gauge springs for architectural and industrial dampening.</p>
+                    <span class="product-meta">10mm Stainless</span>
+                    <h3>10mm Stainless Steel Compression Spring</h3>
+                    <p>Heavy-duty 10mm gauge stainless steel springs for high-impact absorption.</p>
                     <div class="product-specs-preview">
                         <div class="mini-spec">Wire Dia <strong>10mm</strong></div>
                         <div class="mini-spec">Cap <strong>5000N</strong></div>
-                        <div class="mini-spec">Finish <strong>Zinc</strong></div>
+                        <div class="mini-spec">Material <strong>SS</strong></div>
                     </div>
                     <div class="product-actions" style="display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
@@ -181,18 +203,21 @@
                 </div>
             </div>
 
-            <div class="product-card" data-category="compression" data-title="Flat Coil Spring"
-                data-description="Specialized flat-coil design for compact rotational spring requirements and limited space assemblies. Ideal for automotive interiors and electronic devices."
-                data-image="assets/prod-flat.png"
-                data-specs='{"Type": "Worm/Flat", "Material": "Spring Steel", "Width": "5mm - 50mm", "Thickness": "0.5mm - 2mm"}'
-                data-features='["Space Saving Design", "Linear Torque", "Custom End Formings", "Low Friction"]'>
+
+
+            <!-- TAPER PRODUCTS -->
+            <div class="product-card" data-category="other" data-title="Taper Spring"
+                data-description="High-precision Taper Spring and Taper Springs for variable rate loads. Engineered for stability and anti-nesting in demanding industrial environments."
+                data-image="assets/Taper_Spring-removebg-preview.png"
+                data-specs='{"Type": "Conical", "Material": "Spring Steel", "Origin": "Ahmedabad", "Finish": "Natural"}'
+                data-features='["Variable Rate", "Anti-Nesting", "Industrial Stability", "Precision Wound"]'>
                 <div class="product-image">
-                    <img src="assets/prod-flat.png" alt="Flat Coil Spring">
+                    <img src="assets/Taper_Spring-removebg-preview.png" alt="Taper Spring">
                 </div>
                 <div class="product-info">
-                    <span class="product-meta">Worm/Flat Type</span>
-                    <h3>Flat Coil Spring</h3>
-                    <p>Specialized flat-coil design for compact rotational spring requirements.</p>
+                    <span class="product-meta">Conical Gear</span>
+                    <h3>Taper Spring</h3>
+                    <p>Expertly crafted Taper Spring and Taper Springs for industrial stability.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -201,18 +226,19 @@
                 </div>
             </div>
 
-            <div class="product-card" data-category="compression" data-title="Precision Taper Spring"
-                data-description="Conical and tapered designs for variable rate loads and anti-nesting solutions. Ideal for furniture, battery contacts and marine hardware."
-                data-image="assets/prod-compression.png"
-                data-specs='{"Type": "Conical", "Rate": "Variable", "Base Dia": "10mm - 100mm", "Material": "SS 304"}'
-                data-features='["Anti-Tangle Coils", "Variable Spring Rate", "Telescopic Design", "Stainless Durability"]'>
+            <!-- INDUSTRIAL SPRINGS -->
+            <div class="product-card" data-category="industrial" data-title="Wire Spring Steel Spring"
+                data-description="We are a leading Manufacturer of Wire Spring Steel Spring from Ahmedabad, India. Engineered for maximum durability and return force."
+                data-image="assets/Wire_Spring_Steel_Spring-removebg-preview (1).png"
+                data-specs='{"Material": "Carbon Steel", "Finish": "Oil Tempered", "Hardness": "45-50 HRC", "Origin": "Ahmedabad"}'
+                data-features='["Industrial Strength", "Oil-Quenched", "Fatigue Resistance", "Ahmedabad Manufactured"]'>
                 <div class="product-image">
-                    <img src="assets/prod-compression.png" alt="Taper Spring">
+                    <img src="assets/Wire_Spring_Steel_Spring-removebg-preview (1).png" alt="Wire Spring Steel Spring">
                 </div>
                 <div class="product-info">
-                    <span class="product-meta">Conical Form</span>
-                    <h3>Precision Taper Spring</h3>
-                    <p>Conical and tapered designs for variable rate loads and anti-nesting.</p>
+                    <span class="product-meta">Carbon Steel</span>
+                    <h3>Wire Spring Steel Spring</h3>
+                    <p>Leading Manufacturer of Wire Spring Steel Spring from Ahmedabad, India.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -221,19 +247,78 @@
                 </div>
             </div>
 
-            <!-- TENSION/EXTENSION SERIES -->
-            <div class="product-card" data-category="tension" data-title="Tension Springs 1.0mm"
-                data-description="Precision 1.0mm gauge tension springs with reinforced mounting hooks for accurate return force. Essential for mechanical linkages."
-                data-image="assets/prod-tension.png"
-                data-specs='{"Wire Dia": "1.0mm", "End": "Machine Hook", "Stretch": "200%", "Material": "Carbon Steel"}'
+            <div class="product-card" data-category="industrial" data-title="Ss Spring Chiill"
+                data-description="Specifically chilled and heat-treated stainless variants for extreme rigidity. We provide Ss Spring Chiill from Ahmedabad, India."
+                data-image="assets/Ss_Spring_Chiill-removebg-preview.png"
+                data-specs='{"Treatment": "Cryogenic", "Rigidity": "Ultra-High", "Material": "SS 304H", "Origin": "Ahmedabad"}'
+                data-features='["Cryogenic Stabilized", "Low Temp Resilience", "Precision Heat Treated", "Rigid Form"]'>
+                <div class="product-image">
+                    <img src="assets/Ss_Spring_Chiill-removebg-preview.png" alt="Ss Spring Chiill">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">Hardened 304</span>
+                    <h3>Ss Spring Chiill</h3>
+                    <p>Chilled and heat-treated stainless variants for extreme rigidity.</p>
+                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="industrial" data-title="Tension Springs 1.0mm"
+                data-description="Precision 1.0mm gauge tension springs from Ahmedabad, India. Essential for mechanical linkages and accurate return force."
+                data-image="assets/Tension_Springs_1.0mm-removebg-preview.png"
+                data-specs='{"Wire Dia": "1.0mm", "End": "Machine Hook", "Material": "Carbon Steel", "Origin": "Ahmedabad"}'
                 data-features='["Secure Hooking", "Consistent Tension", "Plated Finish", "Cycle Optimized"]'>
                 <div class="product-image">
-                    <img src="assets/prod-tension.png" alt="Tension Springs 1.0mm">
+                    <img src="assets/Tension_Springs_1.0mm-removebg-preview.png" alt="Tension Springs 1.0mm">
                 </div>
                 <div class="product-info">
                     <span class="product-meta">1.0mm Wire</span>
                     <h3>Tension Springs 1.0mm</h3>
-                    <p>Precision 1.0mm gauge tension springs with reinforced mounting hooks.</p>
+                    <p>Precision 1.0mm gauge tension springs with reinforced hooks.</p>
+                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- STAINLESS STEEL SPRINGS SERIES -->
+            <div class="product-card" data-category="stainless" data-title="Stainless Steel Spring"
+                data-description="We are technical experts in Stainless Steel Spring manufacturing. Our high-precision springs are designed for maximum corrosion resistance and durability."
+                data-image="assets/Stainless_Steel_Spring-removebg-preview.png"
+                data-specs='{"Material": "Stainless Steel", "Grade": "304/316", "Origin": "Ahmedabad", "Finish": "Polished"}'
+                data-features='["Corrosion Resistant", "High Precision", "Durable Coils", "Custom Manufacturing"]'>
+                <div class="product-image">
+                    <img src="assets/Stainless_Steel_Spring-removebg-preview.png" alt="Stainless Steel Spring">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">High-Grade SS</span>
+                    <h3>Stainless Steel Spring</h3>
+                    <p>High-precision Stainless Steel Spring designed for extreme durability.</p>
+                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- STAINLESS STEEL SPRINGS SERIES -->
+            <div class="product-card" data-category="stainless" data-title="SS 304 Spring"
+                data-description="Pioneers in the industry, we offer SS 304 Spring, Stainless Steel Spring, Stainless Steel 304 Spring, Spring Steel Spring, SS Spring and ss-spring from India."
+                data-image="assets/SS_304_Spring-removebg-preview.png"
+                data-specs='{"Grade": "SS 304", "Origin": "India", "Resist": "High", "Type": "Precision"}'
+                data-features='["Industry Pioneers", "Precision Wound", "ASTM Standards", "ISO Certified"]'>
+                <div class="product-image">
+                    <img src="assets/SS_304_Spring-removebg-preview.png" alt="SS 304 Spring">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">Precision 304</span>
+                    <h3>SS 304 Spring</h3>
+                    <p>Industry pioneers in SS 304, SS Spring, and Stainless Steel variants.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -242,18 +327,18 @@
                 </div>
             </div>
 
-            <div class="product-card" data-category="tension" data-title="Wire Spring Steel Series"
-                data-description="High-carbon spring steel wire for maximum durability and return force in demanding applications. Optimized for high-frequency operation."
-                data-image="assets/prod-industrial.png"
-                data-specs='{"Material": "Carbon Steel", "Finish": "Oil Tempered", "Hardness": "45-50 HRC", "Max Load": "TBD"}'
-                data-features='["Industrial Strength", "Oil-Quenched", "Fatigue Resistance", "Broad Load Range"]'>
+            <div class="product-card" data-category="stainless" data-title="Stainless Steel 304 Spring"
+                data-description="High-grade Stainless Steel 304 Spring designed for critical performance in medical and food-grade environments. We specialize in SS Spring and ss-spring manufacturing."
+                data-image="assets/Stainless_Steel_304_Spring-removebg-preview.png"
+                data-specs='{"Material": "SS 304", "Finish": "Polished", "Purity": "Food Grade", "Application": "Medical"}'
+                data-features='["Corrosion Proof", "Bio-Compatible", "High Durability", "Mirror Finish"]'>
                 <div class="product-image">
-                    <img src="assets/prod-industrial.png" alt="Wire Spring Steel Spring">
+                    <img src="assets/Stainless_Steel_304_Spring-removebg-preview.png" alt="Stainless Steel 304 Spring">
                 </div>
                 <div class="product-info">
-                    <span class="product-meta">Carbon Steel</span>
-                    <h3>Wire Spring Steel Series</h3>
-                    <p>High-carbon spring steel wire for maximum durability and return force.</p>
+                    <span class="product-meta">Medical Grade</span>
+                    <h3>Stainless Steel 304 Spring</h3>
+                    <p>High-grade Stainless Steel 304, SS Spring, and ss-spring specialist.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -262,19 +347,18 @@
                 </div>
             </div>
 
-            <!-- STAINLESS ELITE SERIES -->
-            <div class="product-card" data-category="stainless" data-title="SS 304 Elite Spring"
-                data-description="Bio-compatible and corrosion-resistant springs for medical, marine and food processing industries. Mirror finish options available."
-                data-image="assets/prod-compression.png"
-                data-specs='{"Grade": "SS 316L", "Purity": "Medical Grade", "Corrosion": "High", "Coating": "N/A"}'
-                data-features='["Medical Compatibility", "Salt-Spray Resistant", "Cleanroom Packaged", "ASTM Standardized"]'>
+            <div class="product-card" data-category="stainless" data-title="Spring Steel Spring"
+                data-description="Advanced metallurgical Spring Steel Spring offering the highest fatigue life. We are pioneers in Stainless Steel Spring and Spring Steel Spring solutions from India."
+                data-image="assets/Spring_Steel_Spring-removebg-preview.png"
+                data-specs='{"Alloy": "Standard Steel", "Fatigue": "Infinite", "Finish": "Oil Tempered", "Precision": "High"}'
+                data-features='["Infinite Fatigue Life", "Heavy-Duty Cycle", "Zero Structural Flaws", "High Performance"]'>
                 <div class="product-image">
-                    <img src="assets/prod-compression.png" alt="SS 304 Elite">
+                    <img src="assets/Spring_Steel_Spring-removebg-preview.png" alt="Spring Steel Spring">
                 </div>
                 <div class="product-info">
-                    <span class="product-meta">High Resistance</span>
-                    <h3>SS 304 Elite Spring</h3>
-                    <p>Bio-compatible and corrosion-resistant springs for medical and marine use.</p>
+                    <span class="product-meta">Maximum Recovery</span>
+                    <h3>Spring Steel Spring</h3>
+                    <p>Highest fatigue life Spring Steel Spring and Stainless Steel Spring solutions.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -283,59 +367,21 @@
                 </div>
             </div>
 
-            <div class="product-card" data-category="stainless" data-title="Spring Steel Elite"
-                data-description="Advanced metallurgical alloy offering the highest fatigue life in its class. Perfect for high-frequency vibrations and critical safety components."
-                data-image="assets/prod-industrial.png"
-                data-specs='{"Alloy": "Cr-Si", "Fatigue": "Infinite @ 200MPa", "Finish": "Blued", "Precision": "ISO 7"}'
-                data-features='["Infinite Fatigue Life", "Aerospace Tolerance", "Blued Steel Finish", "Zero Structural Flaws"]'>
-                <div class="product-image">
-                    <img src="assets/prod-industrial.png" alt="Spring Steel Elite">
-                </div>
-                <div class="product-info">
-                    <span class="product-meta">Max Recovery</span>
-                    <h3>Spring Steel Elite</h3>
-                    <p>Advanced metallurgical alloy offering the highest fatigue life in its class.</p>
-                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
-                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
-                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
-                                class="fas fa-tag"></i></a>
-                    </div>
-                </div>
-            </div>
 
-            <div class="product-card" data-category="stainless" data-title="SS Spring Chill"
-                data-description="Specifically chilled and heat-treated stainless variants for extreme rigidity and dimensional stability at low temperatures. Ideal for laboratory equipment."
-                data-image="assets/prod-compression.png"
-                data-specs='{"Treatment": "Cryogenic", "Rigidity": "Ultra-High", "Material": "SS 304H", "Application": "Cryogenics"}'
-                data-features='["Cryogenic Stabilized", "Low Temp Resilience", "Non-Magnetic Option", "Precision Heat Treatment"]'>
-                <div class="product-image">
-                    <img src="assets/prod-compression.png" alt="SS Spring Chill">
-                </div>
-                <div class="product-info">
-                    <span class="product-meta">Hardened 304</span>
-                    <h3>SS Spring Chill</h3>
-                    <p>Specifically chilled and heat-treated stainless variants for extreme rigidity.</p>
-                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
-                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
-                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
-                                class="fas fa-tag"></i></a>
-                    </div>
-                </div>
-            </div>
 
             <!-- HEAVY INDUSTRIAL SERIES -->
-            <div class="product-card" data-category="industrial" data-title="Industrial MS Spring"
-                data-description="General purpose mild steel heavy-duty springs for large-scale manufacturing and heavy press machinery. Cost-effective and reliable."
-                data-image="assets/prod-industrial.png"
-                data-specs='{"Material": "Mild Steel", "Size": "Custom", "Strength": "Industrial", "Weight": "Heavy Duty"}'
-                data-features='["Robust Construction", "Versatile Fit", "Cost Efficient", "Surface Protected"]'>
+            <div class="product-card" data-category="industrial" data-title="Ms Spring"
+                data-description="General purpose mild steel heavy-duty springs from Ahmedabad. We are a leading Manufacturer of Ms Spring for large-scale manufacturing."
+                data-image="assets/Ms_Spring-removebg-preview.png"
+                data-specs='{"Material": "Mild Steel", "Size": "Custom", "Strength": "Industrial", "Origin": "Ahmedabad"}'
+                data-features='["Robust Construction", "Versatile Fit", "Cost Efficient", "Ahmedabad Factory"]'>
                 <div class="product-image">
-                    <img src="assets/prod-industrial.png" alt="Ms Spring Industrial">
+                    <img src="assets/Ms_Spring-removebg-preview.png" alt="Ms Spring">
                 </div>
                 <div class="product-info">
                     <span class="product-meta">Mild Steel</span>
-                    <h3>Industrial MS Spring</h3>
-                    <p>General purpose mild steel heavy-duty springs for manufacturing setups.</p>
+                    <h3>Ms Spring</h3>
+                    <p>Leading Manufacturer of Ms Spring from Ahmedabad, India.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -344,18 +390,78 @@
                 </div>
             </div>
 
-            <div class="product-card" data-category="industrial" data-title="Automatic Assembly Springs"
-                data-description="Designed for seamless integration into high-speed automatic production lines with ultra-low friction coatings and anti-nesting geometry."
-                data-image="assets/prod-compression.png"
-                data-specs='{"Coating": "Teflon", "Speed": "1000 pcs/min", "Precision": "High", "Type": "Standardized"}'
+            <div class="product-card" data-category="industrial" data-title="Tension Spring"
+                data-description="We are technical experts in Tension Spring and Tension Springs manufacturing from Ahmedabad. Precision engineered for high return force."
+                data-image="assets/Tension_Springs-removebg-preview.png"
+                data-specs='{"Type": "Tension", "Material": "Spring Steel", "Origin": "Ahmedabad", "Finish": "Natural"}'
+                data-features='["High Return Force", "Durable Coils", "Custom Ends", "Ahmedabad Origin"]'>
+                <div class="product-image">
+                    <img src="assets/Tension_Springs-removebg-preview.png" alt="Tension Spring">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">Spring Steel</span>
+                    <h3>Tension Spring</h3>
+                    <p>Leading Manufacturer of Tension Spring and Tension Springs from Ahmedabad.</p>
+                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="other" data-title="Automatic Springs"
+                data-description="Designed for seamless integration into high-speed automatic production lines. Our Automatic Springs and Automatic Assembly Springs ensure zero maintenance and high throughput."
+                data-image="assets/Automatic_Springs-removebg-preview.png"
+                data-specs='{"Coating": "Teflon", "Speed": "Industrial", "Precision": "High", "Type": "Standardized"}'
                 data-features='["Self-Cleaning Surface", "Anti-Tangle Geometry", "High Throughput", "Zero Maintenance"]'>
                 <div class="product-image">
-                    <img src="assets/prod-compression.png" alt="Automatic Springs">
+                    <img src="assets/Automatic_Springs-removebg-preview.png" alt="Automatic Springs">
                 </div>
                 <div class="product-info">
                     <span class="product-meta">Automation-Grade</span>
-                    <h3>Automatic Assembly Springs</h3>
+                    <h3>Automatic Springs</h3>
                     <p>Designed for seamless integration into high-speed automatic production lines.</p>
+                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="other" data-title="Compression Spring"
+                data-description="General purpose Compression Spring manufacturing. We provide Compression Spring solutions with high load capacity and structural integrity."
+                data-image="assets/Compression_Spring-removebg-preview.png"
+                data-specs='{"Type": "Compression", "Material": "Spring Steel", "Usage": "Industrial", "Origin": "India"}'
+                data-features='["High Load Capacity", "Uniform Pitch", "Durable Coils", "Standardized Sizing"]'>
+                <div class="product-image">
+                    <img src="assets/Compression_Spring-removebg-preview.png" alt="Compression Spring">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">Standard Industrial</span>
+                    <h3>Compression Spring</h3>
+                    <p>General purpose Compression Spring for diverse industrial applications.</p>
+                    <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
+                        <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
+                                class="fas fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="other" data-title="Tension Spring"
+                data-description="High-precision Tension Spring and Tension Springs manufacturing. Designed for accurate return force and long-term reliability in mechanical linkages."
+                data-image="assets/Tension_Springs-removebg-preview.png"
+                data-specs='{"Type": "Tension", "Material": "Hardened Steel", "Ends": "Machine Loops", "Origin": "India"}'
+                data-features='["Consistent Tension", "Secure Hooks", "High Cycle Life", "Precision Wound"]'>
+                <div class="product-image">
+                    <img src="assets/Tension_Springs-removebg-preview.png" alt="Tension Spring">
+                </div>
+                <div class="product-info">
+                    <span class="product-meta">Precision Tension</span>
+                    <h3>Tension Spring</h3>
+                    <p>Reliable Tension Spring and Tension Springs for mechanical linkages.</p>
                     <div class="product-actions" style="margin-top: 15px; display: flex; gap: 10px;">
                         <button class="btn-view-details">Explore Specs <i class="fas fa-microchip"></i></button>
                         <a href="contact.html" class="btn-ask-price" style="margin-top: 0;"><i
@@ -396,18 +502,18 @@
                 <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 25px; letter-spacing: 2px;">Core
                     Solutions</h4>
                 <ul class="footer-links">
-                    <li><a href="products.html#compression"><i class="fas fa-chevron-right"
+                    <li><a href="products.html?filter=compression"><i class="fas fa-chevron-right"
                                 style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Compression
-                            Systems</a></li>
-                    <li><a href="products.html#tension"><i class="fas fa-chevron-right"
-                                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Tension &
-                            Extension</a></li>
-                    <li><a href="products.html#stainless"><i class="fas fa-chevron-right"
-                                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Stainless Elite
-                            Series</a></li>
-                    <li><a href="products.html#industrial"><i class="fas fa-chevron-right"
-                                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Industrial Heavy
-                            Duty</a></li>
+                            Springs</a></li>
+                    <li><a href="products.html?filter=industrial"><i class="fas fa-chevron-right"
+                                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Industrial
+                            Springs</a></li>
+                    <li><a href="products.html?filter=stainless"><i class="fas fa-chevron-right"
+                                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Stainless Steel
+                            Springs</a></li>
+                    <li><a href="products.html?filter=other"><i class="fas fa-chevron-right"
+                                style="font-size: 0.6rem; margin-right: 10px; opacity: 0.5;"></i> Other
+                            Products</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -456,33 +562,47 @@
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 const filter = btn.getAttribute('data-filter');
-
-                // Active class toggle
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                // Card Animation & Filtering
-                const cards = document.querySelectorAll('.product-card');
-                cards.forEach(card => {
-                    // Initial hide animation
-                    card.style.opacity = '0';
-                    card.style.transform = 'translateY(15px)';
-
-                    setTimeout(() => {
-                        const category = card.getAttribute('data-category');
-                        if (filter === 'all' || category === filter) {
-                            card.style.display = 'block';
-                            // Trigger reflow for animation
-                            void card.offsetWidth;
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateY(0)';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    }, 300);
-                });
+                applyFilter(filter);
             });
         });
+
+        function applyFilter(filter) {
+            const activeBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+            if (!activeBtn) return;
+
+            // Active class toggle
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            activeBtn.classList.add('active');
+
+            // Card Animation & Filtering
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach(card => {
+                // Initial hide animation
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(15px)';
+
+                setTimeout(() => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        // Trigger reflow for animation
+                        void card.offsetWidth;
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }, 300);
+            });
+        }
+
+        // URL Parameter Support for Filtering
+        window.addEventListener('load', () => {
+            const params = new URLSearchParams(window.location.search);
+            const urlFilter = params.get('filter') || 'all';
+            applyFilter(urlFilter);
+        });
+
 
         const cards = document.querySelectorAll('.product-card');
         cards.forEach(card => {
